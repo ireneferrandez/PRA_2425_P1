@@ -11,7 +11,7 @@ class List {
 		virtual T get(int pos) = 0;
 		virtual int search(T e) = 0;
 		virtual bool empty() = 0;
-		virtual int size() = 0;
+		virtual int size() const = 0;
 		virtual T operator[](int pos) const = 0;
 		virtual ~List() {}
 };

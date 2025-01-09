@@ -131,7 +131,7 @@ public:
         return n == 0;
     }
 
-    int size() const {
+    int size() const override {
         return n;
     }
 };
