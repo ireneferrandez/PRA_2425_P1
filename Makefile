@@ -54,3 +54,5 @@ bin/testDrawing: testDrawing.cpp Drawing.o Square.o Rectangle.o Circle.o Shape.o
 
 clean:
 	rm -r *.o *.gch bin
+
+all: bin/testListArray bin/testNode bin/testListLinked bin/testPoint2D bin/testCircle bin/testRectangle bin/testSquare bin/testDrawing
