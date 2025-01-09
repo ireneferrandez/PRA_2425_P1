@@ -94,7 +94,7 @@ public:
         return n;
     }
 
-    T operator[](int pos) override {
+    T operator[](int pos) const override {
         if (pos < 0 || pos >= n) {
             throw out_of_range("Fuera de rango");
         }

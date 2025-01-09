@@ -23,9 +23,9 @@ public:
         }
     }
 
-    T operator[](int pos) {
+    T operator[](int pos) const override {
         if (pos < 0 || pos >= size()) {
-            throw out_of_range("Fuera de rango");
+            throw out_of_range("Índice fuera de rango");
         }
         Node<T>* current = first;
         for (int i = 0; i < pos; ++i) {
@@ -114,7 +114,7 @@ public:
         return current->data;
     }
 
-    int search(T e) override {
+    int search(T e) {
         Node<T>* current = first;
         int pos = 0;
         while (current != nullptr) {
@@ -131,7 +131,7 @@ public:
         return n == 0;
     }
 
-    int size() override {
+    int size() const {
         return n;
     }
 };
