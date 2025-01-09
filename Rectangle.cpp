@@ -58,10 +58,6 @@ void Rectangle::translate(double incX, double incY) {
     }
 }
 
-void Rectangle::print() const {
-    cout << "Vertice 0: " << vs[0] << ", Vertice 1: " << vs[1] 
-         << ", Vertice 2: " << vs[2] << ", Vertice 3: " << vs[3] << endl;
-}
 
 Point2D Rectangle::get_vertex(int ind) const {
     if (ind < 0 || ind >= N_VERTICES) {
