@@ -22,7 +22,7 @@ public:
     double area() const override;
     double perimeter() const override;
     void translate(double incX, double incY) override;
-    virtual void print() const{
+    void print() const override{
         std::cout << "Rectangulo: color: " << color << std::endl;
         for (int i = 0; i < N_VERTICES; ++i) {
             std::cout << "Vertice " << i + 1 << ": (" << vs[i].get_x() << ", " << vs[i].get_y() << ")" << std::endl;

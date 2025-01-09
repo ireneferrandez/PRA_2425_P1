@@ -24,7 +24,7 @@ class Circle : public Shape {
 		double area() const override;
 		double perimeter() const override;
 		void translate(double incX, double incY) override;
-		void print() override;
+		void print() const override;
 };
 
 #endif

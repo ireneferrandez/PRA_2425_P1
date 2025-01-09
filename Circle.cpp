@@ -45,7 +45,7 @@ void Circle::translate(double incX, double incY) {
     center.set_y(center.get_y() + incY);
 }
 
-void Circle::print() {
+void Circle::print() const{
     cout << "Centro del círculo: " << center << ", radio: " << radius << ", color: " << get_color() << endl;
 }
 
